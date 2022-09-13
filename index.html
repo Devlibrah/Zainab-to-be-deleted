@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href= "index.css" />
+  </head>
+  <body>
+    
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description"><i>Thank you for taking the time to improve the platform</i></p>
+    
+      <form id="survey-form">
+        <fieldset>
+        <label for="name">Name</label>
+        <input id="name" type="text" placeholder="Enter your name" value="Zainab" required></input>
+        <label for="email">Email</label>
+        <input id="email" type="email" placeholder="Enter your email" value="email" required></input>
+        <label for="number">Age</label>
+        <input id="number" type="number" min="11" max="100" placeholder="Age" value="20"></input>
+        <br>
+        <label class="question" for="drop-down">Which option best describes your current role? </label>
+        <br>
+        <br>
+        <select id="dropdown">
+        <option>Select current role</option>
+        <option>Student</option>
+        <option>Full time job</option>
+        <option>Part time job</option>
+        </select>
+        </fieldset>
+        <fieldset class="recommend">
+        <p class="question">Would you recommend freeCodeCamp to a friend?</p>
+        <label for="choice-1" ><input class="choice" id="choice-1" type="radio" name="recommend" value="choice-1"></input>Definitely</label>
+        <label for="choice-2"><input class="choice" id="choice-2" type="radio" name="recommend" value="choice-2"></input>Maybe</label>
+        </fieldset>
+        <fieldset class="improvment">    
+          <p class="question">What would you like improved?</p>
+          <label for="front" ><input class="choice" id="front" type="checkbox" name="frontend" value="front">Front-end</label>
+          <label for="back" ><input class="choice" id="back" type="checkbox" name="back" value="back">Back-end</label></fieldset>
+          <fieldset>
+          <label for="comments"> Any comments or suggestions?
+            <textarea id="comments" name="comments" rows="10" cols="30"></textarea>
+            </label>
+            </fieldset>
+            <br>
+           <input type="submit" id="submit" ></input>
+        </form>
+    </body>
+    </html>
